@@ -102,27 +102,33 @@
     const target = el.dataset.scramble;
     if (!target || reduceMotion) return;
     const glyphs = "!<>-_\\/[]{}=+*^?#01ABCDEFXYZ";
-    let frame = 0;
-    const queue = [...target].map((ch, i) => ({ ch, start: Math.floor(Math.random() * 12) + i, end: Math.floor(Math.random() * 18) + 22 + i * 1.5 }));
-    function tick() {
+    // a quick left-to-right glitch wave, time-based so it always finishes in under a second
+    const queue = [...target].map((ch, i) => {
+      const start = i * 35 + Math.random() * 40;
+      return { ch, start, end: start + 140 + Math.random() * 160 };
+    });
+    let t0;
+    function tick(now) {
+      if (t0 === undefined) t0 = now;
+      const t = now - t0;
       let out = "", done = 0;
       for (const q of queue) {
-        if (frame >= q.end || q.ch === " ") { out += q.ch; done++; }
-        else if (frame >= q.start) out += `<span class="glitch-char">${glyphs[Math.floor(Math.random() * glyphs.length)]}</span>`;
-        else out += `<span style="opacity:0">${q.ch}</span>`;
+        if (t >= q.end || q.ch === " ") { out += q.ch; done++; }
+        else if (t >= q.start) out += `<span class="glitch-char">${glyphs[Math.floor(Math.random() * glyphs.length)]}</span>`;
+        else out += q.ch;
       }
       el.innerHTML = out;
-      if (done < queue.length) { frame++; requestAnimationFrame(tick); }
+      if (done < queue.length) requestAnimationFrame(tick);
       else el.textContent = target;
     }
-    setTimeout(tick, 350);
+    setTimeout(() => requestAnimationFrame(tick), 250);
   }
 
   /* ---------------- Typed role rotator ---------------- */
   function typed() {
     const el = $("#typed");
     if (!el) return;
-    const words = ["AI systems", "RAG pipelines", "recommender engines", "multimodal models", "vision tools", "scalable backends"];
+    const words = ["computer vision models", "RAG pipelines", "recommender engines", "multimodal models", "scalable backends"];
     if (reduceMotion) { el.textContent = words[0]; return; }
     let w = 0, i = words[0].length, deleting = true;
     function step() {
@@ -138,7 +144,7 @@
       }
       setTimeout(step, delay);
     }
-    setTimeout(step, 2600);
+    setTimeout(step, 1800);
   }
 
   /* ---------------- Reveal on scroll + counters ---------------- */
