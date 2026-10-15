@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anushesh Jumale | AI / ML Engineer</title>
+  <meta name="description" content="Anushesh Jumale: AI / ML engineer building RAG pipelines, recommender systems, multimodal models and distributed backends." />
+  <meta name="theme-color" content="#06060c" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%2322d3ee'/><stop offset='1' stop-color='%23a855f7'/></linearGradient></defs><rect width='64' height='64' rx='16' fill='%2306060c'/><text x='50%' y='58%' text-anchor='middle' dominant-baseline='middle' font-family='monospace' font-weight='700' font-size='30' fill='url(%23g)'>AJ</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <div class="progress" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <a href="#top" class="logo" aria-label="Home"><span class="logo-bracket">&lt;</span>AJ<span class="logo-bracket">/&gt;</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about"><span class="mono">01.</span>About</a>
+      <a href="#skills"><span class="mono">02.</span>Stack</a>
+      <a href="#projects"><span class="mono">03.</span>Projects</a>
+      <a href="#contact"><span class="mono">04.</span>Contact</a>
+    </nav>
+    <a href="mailto:anusheshjumale88@gmail.com" class="btn btn-ghost nav-cta">Hire me</a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <main id="top">
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <canvas id="net" aria-hidden="true"></canvas>
+      <div class="blob blob-1" aria-hidden="true"></div>
+      <div class="blob blob-2" aria-hidden="true"></div>
+      <div class="blob blob-3" aria-hidden="true"></div>
+      <div class="grid-floor" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <p class="status reveal"><span class="pulse"></span>Open to AI / ML roles &amp; internships</p>
+        <p class="hello mono reveal">Hi, I'm</p>
+        <h1 class="name reveal" data-scramble="Anushesh Jumale">Anushesh Jumale</h1>
+        <h2 class="role reveal">I build <span class="typed" id="typed">AI systems</span><span class="caret">|</span></h2>
+        <p class="lede reveal">
+          AI / ML engineer who takes models all the way to production: citation-grounded RAG for legal contracts,
+          recommenders that search <strong>1.15M tracks in &lt;120&nbsp;ms</strong>, multimodal market forecasting,
+          and the distributed backends that serve them.
+        </p>
+        <div class="hero-ctas reveal">
+          <a href="#projects" class="btn btn-primary magnetic"><span>View my work</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#contact" class="btn btn-ghost magnetic"><span>Get in touch</span></a>
+        </div>
+        <div class="socials reveal">
+          <a href="https://github.com/Anushesh88" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.11.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.68.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/anusheshjumale884" target="_blank" rel="noopener" aria-label="LinkedIn" class="linkedin-link">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+          </a>
+          <a href="mailto:anusheshjumale88@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M3 6.5A1.5 1.5 0 0 1 4.5 5h15A1.5 1.5 0 0 1 21 6.5v11a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5v-11Z M3.5 6.5l8.5 6.5 8.5-6.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <h2 class="section-title reveal"><span class="mono">01.</span> About me</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I like problems where the model is only half the work. Getting a recommender to rank well is fun; getting it to
+            filter a million-track catalog in the time it takes to blink is the part I really enjoy.
+          </p>
+          <p>
+            My projects span <span class="hl">retrieval-augmented generation</span>, <span class="hl">two-stage recommenders</span>,
+            <span class="hl">multimodal deep learning</span> and <span class="hl">computer vision</span>, and I build the
+            systems around them too: FastAPI services, Redis caches, Docker and Kubernetes deployments, and the
+            React front ends people actually click on.
+          </p>
+          <p>
+            I care about honest evaluation (leakage-free splits, realistic transaction costs, load tests with real
+            percentiles), clean modular code, and shipping things that work end to end.
+          </p>
+        </div>
+        <div class="stats">
+          <div class="stat reveal"><span class="stat-num" data-count="15" data-suffix="+">0</span><span class="stat-label">projects built end to end</span></div>
+          <div class="stat reveal"><span class="stat-num" data-count="1.15" data-decimals="2" data-suffix="M">0</span><span class="stat-label">tracks ranked per query</span></div>
+          <div class="stat reveal"><span class="stat-num" data-count="300" data-suffix="/s">0</span><span class="stat-label">requests sustained, URL shortener</span></div>
+          <div class="stat reveal"><span class="stat-num" data-count="16" data-suffix="ms">0</span><span class="stat-label">P50 redirect latency</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills">
+      <h2 class="section-title reveal"><span class="mono">02.</span> Tech stack</h2>
+
+      <div class="marquee reveal" aria-hidden="true">
+        <div class="marquee-track">
+          <span>PyTorch</span><span>LangChain</span><span>FastAPI</span><span>FAISS</span><span>XGBoost</span><span>Transformers</span><span>ChromaDB</span><span>Redis</span><span>PostgreSQL</span><span>Docker</span><span>Kubernetes</span><span>React</span><span>TypeScript</span><span>OpenCV</span>
+          <span>PyTorch</span><span>LangChain</span><span>FastAPI</span><span>FAISS</span><span>XGBoost</span><span>Transformers</span><span>ChromaDB</span><span>Redis</span><span>PostgreSQL</span><span>Docker</span><span>Kubernetes</span><span>React</span><span>TypeScript</span><span>OpenCV</span>
+        </div>
+      </div>
+
+      <div class="skill-grid">
+        <article class="skill-card glow-card reveal">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="6" r="2"/><circle cx="5" cy="18" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="19" cy="18" r="2"/><path d="M7 6.8 10.3 11M7 17.2l3.3-4.2M13.7 11 17 6.8M13.7 13l3.3 4.2"/></svg>
+          </div>
+          <h3>Machine learning</h3>
+          <ul class="chips"><li>PyTorch</li><li>BiLSTM / Attention</li><li>Two-Tower nets</li><li>XGBoost</li><li>scikit-learn</li><li>Pandas · NumPy</li></ul>
+        </article>
+        <article class="skill-card glow-card reveal">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H8l-4 4V5Z"/><path d="M8 9h8M8 12h5"/></svg>
+          </div>
+          <h3>GenAI &amp; NLP</h3>
+          <ul class="chips"><li>RAG</li><li>LangChain</li><li>ChromaDB</li><li>FAISS</li><li>HF Transformers</li><li>FinBERT</li><li>Groq LLMs</li></ul>
+        </article>
+        <article class="skill-card glow-card reveal">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"/></svg>
+          </div>
+          <h3>Computer vision</h3>
+          <ul class="chips"><li>OpenCV</li><li>Cellpose</li><li>SAM · MedSAM</li><li>Segmentation</li><li>MoviePy</li></ul>
+        </article>
+        <article class="skill-card glow-card reveal">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/><path d="M7 7h.01M7 17h.01"/></svg>
+          </div>
+          <h3>Backend &amp; MLOps</h3>
+          <ul class="chips"><li>FastAPI</li><li>PostgreSQL</li><li>Redis</li><li>Docker</li><li>Kubernetes</li><li>Nginx</li><li>Prometheus</li></ul>
+        </article>
+        <article class="skill-card glow-card reveal">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 13l-2 2 2 2M15 13l2 2-2 2"/></svg>
+          </div>
+          <h3>Frontend &amp; apps</h3>
+          <ul class="chips"><li>React</li><li>TypeScript</li><li>Vite</li><li>Tailwind</li><li>Streamlit</li><li>PySide6</li><li>Flutter</li></ul>
+        </article>
+        <article class="skill-card glow-card reveal">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 17l6-6-6-6M12 19h8"/></svg>
+          </div>
+          <h3>Practices</h3>
+          <ul class="chips"><li>Leakage-free eval</li><li>Backtesting</li><li>Load testing</li><li>Data contracts</li><li>Pytest</li><li>CI pipelines</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <h2 class="section-title reveal"><span class="mono">03.</span> Featured projects</h2>
+
+      <div class="filters reveal" role="tablist" aria-label="Filter projects">
+        <button class="filter active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="filter" data-filter="ai" role="tab" aria-selected="false">AI / ML</button>
+        <button class="filter" data-filter="systems" role="tab" aria-selected="false">Systems</button>
+        <button class="filter" data-filter="apps" role="tab" aria-selected="false">Apps</button>
+        <button class="filter" data-filter="creative" role="tab" aria-selected="false">Creative</button>
+      </div>
+
+      <div class="project-grid" id="projectGrid">
+
+        <article class="project glow-card tilt span-2 reveal" data-tags="ai">
+          <div class="project-top">
+            <span class="project-kicker mono">RAG · LegalTech</span>
+            <a class="project-link" href="https://github.com/Anushesh88/Legal-Contract-Analyzer" target="_blank" rel="noopener" aria-label="Legal Contract Analyzer on GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </a>
+          </div>
+          <h3>Legal Contract Analyzer</h3>
+          <p>An AI paralegal over the CUAD commercial-contract dataset. Contracts are parsed with PyMuPDF, embedded into ChromaDB,
+             and answered by a Groq-hosted LLM under <strong>strict citation enforcement</strong>: every claim points back to
+             <code>[Document, Page]</code>.</p>
+          <div class="term" aria-label="Example query">
+            <div class="term-bar"><i></i><i></i><i></i><span class="mono">legal-rag ~ example</span></div>
+            <p class="mono"><span class="t-prompt">ask&gt;</span> Who bears indemnification obligations?</p>
+            <p class="mono t-out">The Distributor indemnifies the Company against third-party claims arising from its sales activities <span class="t-cite">[Distribution_Agreement.pdf, Page 7]</span><span class="caret">▍</span></p>
+          </div>
+          <div class="metric"><span class="metric-big">510</span><span class="metric-small">real commercial contracts (CUAD v1) indexed</span></div>
+          <ul class="tags"><li>LangChain</li><li>ChromaDB</li><li>MiniLM embeddings</li><li>Groq</li><li>FastAPI</li><li>Streamlit</li><li>Docker</li></ul>
+        </article>
+
+        <article class="project glow-card tilt reveal" data-tags="ai systems">
+          <div class="project-top">
+            <span class="project-kicker mono">RecSys · MLOps</span>
+            <a class="project-link" href="https://github.com/Anushesh88/spotify-mlops-recsys" target="_blank" rel="noopener" aria-label="Spotify recommender on GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </a>
+          </div>
+          <h3>Spotify Two-Stage Recommender</h3>
+          <p>Two-Tower PyTorch retrieval into a FAISS index narrows 1.15M tracks to 100 candidates, then an XGBoost ranker scores them.
+             Pandera data contracts guard the pipeline.</p>
+          <div class="metric"><span class="metric-big">&lt;120ms</span><span class="metric-small">end-to-end over 1.15M tracks</span></div>
+          <ul class="tags"><li>PyTorch</li><li>FAISS</li><li>XGBoost</li><li>FastAPI</li><li>Pandera</li></ul>
+        </article>
+
+        <article class="project glow-card tilt reveal" data-tags="ai">
+          <div class="project-top">
+            <span class="project-kicker mono">Multimodal DL · Finance</span>
+            <a class="project-link" href="https://github.com/Anushesh88/Stock-Price-Predictor-NLP" target="_blank" rel="noopener" aria-label="Stock price predictor on GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </a>
+          </div>
+          <h3>Multimodal Stock Predictor</h3>
+          <p>Fuses OHLCV + 10 technical indicators (BiLSTM) with FinBERT news embeddings via temporal cross-attention and an
+             adaptive gate. Backtested on HDFCBANK.NS with purged splits and 5&nbsp;bps costs.</p>
+          <div class="metric"><span class="metric-big">2</span><span class="metric-small">modalities, one gated attention fusion</span></div>
+          <ul class="tags"><li>PyTorch</li><li>FinBERT</li><li>BiLSTM</li><li>Cross-attention</li></ul>
+        </article>
+
+        <article class="project glow-card tilt reveal" data-tags="ai apps">
+          <div class="project-top">
+            <span class="project-kicker mono">Computer vision · BioTech</span>
+            <a class="project-link" href="https://github.com/Anushesh88/ai-microscopy-annotation-application" target="_blank" rel="noopener" aria-label="MicroAnnotate on GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </a>
+          </div>
+          <h3>MicroAnnotate</h3>
+          <p>AI-assisted annotation for cells, nuclei and micro-organisms. A GPU-accelerated PySide6 desktop app plus a
+             React + TypeScript web app backed by a FastAPI inference server.</p>
+          <div class="metric"><span class="metric-big">3</span><span class="metric-small">segmentation models: Cellpose, SAM, MedSAM</span></div>
+          <ul class="tags"><li>PySide6</li><li>OpenCV</li><li>React · TS</li><li>FastAPI</li></ul>
+        </article>
+
+        <article class="project glow-card tilt reveal" data-tags="apps">
+          <div class="project-top">
+            <span class="project-kicker mono">SaaS · Full-stack</span>
+          </div>
+          <h3>Receipt Studio</h3>
+          <p>Drag-and-drop receipt and GST-invoice designer that exports pixel-matched PDFs. GST rule-46 compliant fields,
+             per-financial-year numbering, saved customers and Google sign-in.</p>
+          <div class="metric"><span class="metric-big">20</span><span class="metric-small">ready-made templates</span></div>
+          <ul class="tags"><li>React · Vite</li><li>FastAPI</li><li>WeasyPrint</li><li>Alembic</li></ul>
+        </article>
+
+        <article class="project glow-card tilt span-2 shrink-md reveal" data-tags="systems">
+          <div class="project-top">
+            <span class="project-kicker mono">Distributed systems</span>
+            <a class="project-link" href="https://github.com/Anushesh88/URL-Shortner" target="_blank" rel="noopener" aria-label="URL shortener on GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </a>
+          </div>
+          <h3>Distributed URL Shortener &amp; Rate Limiter</h3>
+          <p>Horizontally scaled behind Nginx with Snowflake-style 64-bit IDs, Redis cache-aside sharded by consistent hashing,
+             a circuit-breaker fallback to Postgres, and an atomic Lua token-bucket limiter. Instrumented with Prometheus and
+             deployable to Kubernetes.</p>
+          <div class="metric-row">
+            <div class="metric"><span class="metric-big">300/s</span><span class="metric-small">sustained throughput</span></div>
+            <div class="metric"><span class="metric-big">16ms</span><span class="metric-small">P50 latency</span></div>
+            <div class="metric"><span class="metric-big">100%</span><span class="metric-small">burst 429 enforcement</span></div>
+          </div>
+          <ul class="tags"><li>FastAPI</li><li>Redis + Lua</li><li>PostgreSQL</li><li>Nginx</li><li>Kubernetes</li><li>Locust</li></ul>
+        </article>
+
+        <article class="project glow-card tilt reveal" data-tags="apps">
+          <div class="project-top">
+            <span class="project-kicker mono">HealthTech · PWA</span>
+          </div>
+          <h3>Smart Clinic Queue</h3>
+          <p>Mobile-first reception PWA with doctor-cabin routing and a live waiting-room TV display that stays in sync across
+             windows, fully offline, with zero heavy dependencies.</p>
+          <div class="metric"><span class="metric-big">0</span><span class="metric-small">framework deps, pure ES modules</span></div>
+          <ul class="tags"><li>Vanilla JS</li><li>Tailwind</li><li>PWA</li><li>MVC</li></ul>
+        </article>
+
+        <article class="project project-wide glow-card reveal" data-tags="creative">
+          <pre class="ascii" aria-hidden="true" id="asciiArt"></pre>
+          <div class="project-body">
+            <div class="project-top">
+              <span class="project-kicker mono">Creative coding</span>
+            </div>
+            <h3>ASCII Reels &amp; Explainer Videos</h3>
+            <p>Turns any video into an Instagram-ready ASCII reel, frame by frame, and auto-generates narrated science
+               explainers (like <em>How Satellites Turn</em>) with offline Piper TTS, generated music and Python-built visuals.
+               The spinning torus on the left is rendered live in your browser with the same character ramp.</p>
+            <ul class="tags"><li>OpenCV</li><li>MoviePy</li><li>Piper TTS</li><li>Pillow</li><li>NumPy</li></ul>
+          </div>
+        </article>
+
+      </div>
+
+      <h3 class="more-title reveal">More things I've built</h3>
+      <ul class="more-list">
+        <li class="reveal" data-tags="ai"><span class="mono">CV</span><div><strong>Carton Volume Measurer</strong><span>Measures box dimensions &amp; volume from a photo with OpenCV + Streamlit.</span></div></li>
+        <li class="reveal" data-tags="apps"><span class="mono">APP</span><div><strong>To-Do Journal</strong><span>Habits, journaling and Plotly analytics on Supabase / Google Sheets.</span><a href="https://github.com/Anushesh88/todo-journal" target="_blank" rel="noopener">GitHub ↗</a></div></li>
+        <li class="reveal" data-tags="ai"><span class="mono">DATA</span><div><strong>MHT-CET College Predictor</strong><span>Predicts admission chances from historical cutoff data.</span><a href="https://github.com/Anushesh88/mht-cet-college-predictor" target="_blank" rel="noopener">GitHub ↗</a></div></li>
+        <li class="reveal" data-tags="systems"><span class="mono">AUTO</span><div><strong>LinkedIn Job Extractor</strong><span>Collects fresh DS / ML postings into a sorted, clean spreadsheet.</span></div></li>
+      </ul>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <p class="mono contact-kicker reveal">04. What's next?</p>
+      <h2 class="contact-title reveal">Let's build something<br /><span class="grad">intelligent</span> together.</h2>
+      <p class="contact-text reveal">I'm looking for AI / ML engineering roles and internships. Whether it's a role, a collaboration
+        or just a question about one of my projects, my inbox is open.</p>
+      <div class="contact-actions reveal">
+        <a href="mailto:anusheshjumale88@gmail.com" class="btn btn-primary btn-lg magnetic"><span>Say hello</span></a>
+        <button class="btn btn-ghost btn-lg copy-email magnetic" data-email="anusheshjumale88@gmail.com">
+          <span class="copy-label">anusheshjumale88@gmail.com</span>
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M5 15V5a1 1 0 0 1 1-1h10" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="mono">Designed &amp; built by Anushesh Jumale · <span id="year"></span></p>
+    <div class="footer-links">
+      <a href="https://github.com/Anushesh88" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/anusheshjumale884" target="_blank" rel="noopener" class="linkedin-link">LinkedIn</a>
+      <a href="mailto:anusheshjumale88@gmail.com">Email</a>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">Email copied</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
