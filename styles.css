@@ -599,6 +599,29 @@ body.has-cursor .cursor-ring { opacity: 1; }
 .project.span-2 h3 { font-size: 1.75rem; }
 .project p { margin: 0 0 20px; color: var(--muted); font-size: 0.97rem; }
 .project p.plain { margin: -2px 0 10px; color: var(--text); font-size: 1.02rem; font-weight: 500; }
+.project-actions { display: flex; align-items: center; gap: 8px; }
+.live-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  height: 40px;
+  padding: 0 14px;
+  border-radius: 12px;
+  font: 600 0.78rem var(--mono);
+  color: #34d399;
+  border: 1px solid rgba(52, 211, 153, 0.4);
+  background: rgba(52, 211, 153, 0.08);
+  transition: all 0.3s var(--ease);
+}
+.live-link:hover { color: #06060c; background: #34d399; box-shadow: 0 0 20px rgba(52, 211, 153, 0.5); }
+.live-dot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: currentColor;
+  box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.7);
+  animation: pulse 2s infinite;
+}
+
 .private {
   font-size: 0.68rem;
   color: var(--dim);
